@@ -5,7 +5,7 @@
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Formulario</title>
+    <title>inicio</title>
     <!-- CSS only -->
     <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.1.0/dist/css/bootstrap.min.css" rel="stylesheet"
         integrity="sha384-KyZXEAg3QhqLMpG8r+8fhAXLRk2vvoC2f3B09zVXn8CA5QIVfZOJ3BCsw2P0p/We" crossorigin="anonymous">
@@ -13,19 +13,26 @@
     <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.1.0/dist/js/bootstrap.bundle.min.js"
         integrity="sha384-U1DAWAznBHeqEIlVSCgzq+c9gqGAJn5c/t99JyeKa9xxaYpSvHU5awsuZVVFIhvj"
         crossorigin="anonymous"></script>
+
+        <link href="../CSS/inicio.css" rel="stylesheet">
 </head>
 
 <body>
     <div class="container">
-        <p>Login</p>
+        <h2>Welcome</h2>
+        <br>
+        <div class="col-md-6">
         <div class="email">
             <label for="email">Email</label>
             <input type="email" class="form-control" name="email" placeholder="Digite seu Email" id="email" required>
         </div>
+        </div>
         <br>
+        <div class="col-md-6">
         <div class="senha">
             <label for="senha">Senha</label>
             <input type="password" class="form-control" name="senha" placeholder="Digite sua Senha" id="senha" required>
+        </div>
         </div>
         <br>
         <div class="col-12">
@@ -38,8 +45,10 @@
           </div>
           <br>
           <div class="col-12">
-            <button class="btn btn-primary" type="submit">Entrar</button>
+            <button class="btn btn-primary" id="Enviar" onclick="Enviar()" type="submit">Entrar</button>
           </div>
+          <br>
           <button type="button" class="btn btn-link">Não tem cadastro? Cadastra-se</button>
     </div>
+    <script src="../Javascript/inicio.Js"></script>
 </body>
